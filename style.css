@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  
+  .quote {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .quote-content {
+    max-width: 400px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .quote-content strong {
+    color: #1a73e8;
+    font-weight: 600;
+  }
+  
+  .quote-content em {
+    display: block;
+    margin-top: 15px;
+    font-style: normal;
+    font-size: 16px;
+  }
+  
+  
+  .form-box {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .form-content {
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .form-content h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .input-group img {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    opacity: 0.6;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0f5fd3;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .options a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  .options a:hover {
+    text-decoration: underline;
+  }
+  
+  .divider {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    margin: 20px 0 10px;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .social-buttons button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    color: #333;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    padding: 10px;
+  }
+  
+  .social-buttons img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  

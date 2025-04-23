@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="quote" style="background-image: url('img2.jpg');">
+    <div class="quote-content">
+      The only way to <strong>do great work</strong> is to <strong>love what you do</strong>.
+      <em>– Steve Jobs</em>
+    </div>
+  </div>
+
+  <div class="form-box">
+    <div class="form-content">
+      <h2>Sign Up</h2>
+
+      <div class="input-group">
+        <img src="https://img.icons8.com/ios/50/000000/new-post.png"/>
+        <input type="email" placeholder="Your email" required>
+      </div>
+
+      <div class="input-group">
+        <img src="https://img.icons8.com/ios/50/000000/lock.png"/>
+        <input type="password" placeholder="Password" required>
+      </div>
+
+      <div class="input-group">
+        <img src="https://img.icons8.com/ios/50/000000/lock.png"/>
+        <input type="password" placeholder="Repeat Password" required>
+      </div>
+
+      <button>Sign Up</button>
+
+      <div class="divider">or</div>
+
+      <div class="social-buttons">
+        <button><img src="https://img.icons8.com/color/48/google-logo.png"/>Google</button>
+        <button><img src="https://img.icons8.com/color/48/facebook-new.png"/>Facebook</button>
+      </div>
+
+      <div class="options" style="margin-top: 20px;">
+        <span>Already have an account? <a href="login.html">Log In</a></span>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+    document.querySelector("button").addEventListener("click", function (e) {
+      e.preventDefault();
+  
+      const email = document.querySelector('input[type="email"]').value.trim();
+      const password = document.querySelectorAll('input[type="password"]')[0].value.trim();
+      const repeatPassword = document.querySelectorAll('input[type="password"]')[1].value.trim();
+  
+      
+      if (email === "" || password === "" || repeatPassword === "") {
+        alert("Please fill in all fields.");
+        return;
+      }
+  
+      
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+      }
+  
+   
+      if (password !== repeatPassword) {
+        alert("Passwords do not match.");
+        return;
+      }
+  
+     
+      alert("Sign up successful! ");
+    
+    });
+  </script>
+  
+
+</body>
+</html>

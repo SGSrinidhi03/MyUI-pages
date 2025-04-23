@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="form-box">
+    <div class="form-content">
+      <h2>Log In</h2>
+
+      <div class="input-group">
+        <img src="https://img.icons8.com/ios/50/000000/new-post.png"/>
+        <input type="email" placeholder="Your email" required>
+      </div>
+
+      <div class="input-group">
+        <img src="https://img.icons8.com/ios/50/000000/lock.png"/>
+        <input type="password" placeholder="Password" required>
+      </div>
+
+      <button>Log In</button>
+
+      <div class="options">
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <div class="divider">or</div>
+
+      <div class="social-buttons">
+        <button><img src="https://img.icons8.com/color/48/google-logo.png"/>Google</button>
+        <button><img src="https://img.icons8.com/color/48/facebook-new.png"/>Facebook</button>
+      </div>
+
+      <div class="options" style="margin-top: 20px;">
+        <span>Don't have an account? <a href="signup.html">Sign Up</a></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote" style="background-image: url('img1.jpg');">
+    <div class="quote-content">
+      The future belongs to those who <strong>believe</strong> in the <strong>beauty of their dreams</strong>.
+      <em>– Eleanor Roosevelt</em>
+    </div>
+  </div>
+</div>
+<script>
+
+  document.querySelector("button").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const email = document.querySelector('input[type="email"]').value.trim();
+    const password = document.querySelector('input[type="password"]').value.trim();
+
+   
+    if (email === "" || password === "") {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!emailPattern.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+ 
+    alert("Login successful! ");
+   
+  });
+</script>
+
+</body>
+</html>
